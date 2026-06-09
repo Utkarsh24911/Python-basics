@@ -152,62 +152,62 @@
 # print(sum_of_digit(7532))
 
 
-# Global variable
-balance = 1000.00
+# # Global variable
+# balance = 1000.00
 
-# 1. Function with no parameters and no return value
-# Qodo: Test this function
-def check_balance():
-    print("Your current balance is: " + str(balance))
+# # 1. Function with no parameters and no return value
+# # Qodo: Test this function
+# def check_balance():
+#     print("Your current balance is: " + str(balance))
 
-print("Checking balance for the first time:")
-check_balance()
+# print("Checking balance for the first time:")
+# check_balance()
 
-print("\n" + "-"*30 + "\n") # Separator for clarity
-
-
-# 2. Function with parameters and no return value
-# Qodo: Test this function
-def update_balance(amount):
-    new_balance = balance + amount
-    print("Balance updated successfully. New balance: " + str(new_balance))
-
-print("Updating balance by adding 500.00:")
-update_balance(500.00)
-
-print("\n" + "-"*30 + "\n")
+# print("\n" + "-"*30 + "\n") # Separator for clarity
 
 
-# 3. Function with parameters and a return value
-def calculate_total_bill(rate, quantity):
-    total = rate * quantity
-    return total
+# # 2. Function with parameters and no return value
+# # Qodo: Test this function
+# def update_balance(amount):
+#     new_balance = balance + amount
+#     print("Balance updated successfully. New balance: " + str(new_balance))
 
-print("Calculating total bill for Order A:")
-total_a = calculate_total_bill(10.00, 5)
-print(type(total_a))
-print("Total for Order A: " + str(total_a))
+# print("Updating balance by adding 500.00:")
+# update_balance(500.00)
 
-print("\n" + "-"*30 + "\n")
+# print("\n" + "-"*30 + "\n")
 
 
-# 4. Function with default parameter value
-# Qodo: Test this function
-def calculate_total_bill_with_tax(rate, quantity, tax_rate=0.05):
-    total = rate * quantity
-    total_with_tax = total + (total * tax_rate)
-    return total_with_tax
+# # 3. Function with parameters and a return value
+# def calculate_total_bill(rate, quantity):
+#     total = rate * quantity
+#     return total
 
-# This section is ready for when your instructor covers variable number of arguments (*args)
-# 5. #function with variable number of arguments
-    # 5. Function that returns a value
-def new_function(a, b, c):
-    total_sum = a + b + c
-    print("This is a new function that returns a value.")
-    return total_sum
+# print("Calculating total bill for Order A:")
+# total_a = calculate_total_bill(10.00, 5)
+# print(type(total_a))
+# print("Total for Order A: " + str(total_a))
 
-# Call the function by passing 3 numbers (e.g., 10, 20, 30)
-combined_sum = 5 + new_function(10, 20, 30)
+# print("\n" + "-"*30 + "\n")
 
-print("Sum of 5 and the return value of new function: " + str(combined_sum))
+
+# # 4. Function with default parameter value
+# # Qodo: Test this function
+# def calculate_total_bill_with_tax(rate, quantity, tax_rate=0.05):
+#     total = rate * quantity
+#     total_with_tax = total + (total * tax_rate)
+#     return total_with_tax
+
+# # This section is ready for when your instructor covers variable number of arguments (*args)
+# # 5. #function with variable number of arguments
+#     # 5. Function that returns a value
+# def new_function(a, b, c):
+#     total_sum = a + b + c
+#     print("This is a new function that returns a value.")
+#     return total_sum
+
+# # Call the function by passing 3 numbers (e.g., 10, 20, 30)
+# combined_sum = 5 + new_function(10, 20, 30)
+
+# print("Sum of 5 and the return value of new function: " + str(combined_sum))
 
