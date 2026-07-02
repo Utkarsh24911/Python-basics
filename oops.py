@@ -15,18 +15,18 @@ print(e2.company)
 print(e.company)
 
 
-class Animal:  # Parent class (superclass)
+class Animal:  
     def __init__(self, name):
         self.name = name
 
     def speak(self):
         print("Generic animal sound")
 
-class Dog(Animal):  # Dog inherits from Animal (Dog is a subclass of Animal)
-    def speak(self):  # We *override* the speak method (more on this later)
+class Dog(Animal):  
+    def speak(self):
         print("Woof!")
 
-class Cat(Animal):  # Cat also inherits from Animal
+class Cat(Animal):  
     def speak(self):
         print("Meow!")
 
@@ -240,5 +240,23 @@ class BankAccount:
         
 
 
+# from abc import ABC, abstractmethod
 
+class Vehicle(ABC):
+    @abstractmethod
+    def start_engine(self):
+        pass
+
+class Car(Vehicle):
+    def start_engine(self):
+        return "Car engine started"
+    
+class Bike(Vehicle):
+    def start_engine(self):
+        return "Bike engine started"
+    
+toyota = Car()
+print(toyota.start_engine())  # Car engine started
+honda = Bike()
+print(honda.start_engine())   # Bike engine started
     
